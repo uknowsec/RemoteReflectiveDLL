@@ -89,7 +89,6 @@ int main()
 	// 如果加载失败，就退出
 	if (hModule == NULL) {
 		delete[] bFileBuffer;
-		printf("111");
 	}
 	// 获取msg导出函数地址
 	DllMain = (Module)MemoryGetProcAddress(hModule, "DllMain");
